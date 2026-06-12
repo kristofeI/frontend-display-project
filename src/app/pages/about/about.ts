@@ -1,12 +1,14 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
 export class About implements OnInit {
+  // Tech terms are intentionally not translated
   readonly skills = [
     'Angular', 'TypeScript', 'RxJS', 'SCSS',
     'REST APIs', 'Git',

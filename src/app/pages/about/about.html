@@ -2,31 +2,24 @@
 <section class="section about-intro">
   <div class="about-intro__grid reveal-up">
     <div class="about-intro__image">
-      <img src="https://picsum.photos/seed/portrait/480/560" alt="Placeholder portrait" />
+      <img src="https://picsum.photos/seed/portrait/480/560" [attr.alt]="'about.imageAlt' | translate" />
     </div>
     <div class="about-intro__content">
-      <h1 class="section-heading">About <span class="gradient-text">Me</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-      </p>
+      <h1 class="section-heading">{{ 'about.heading' | translate }} <span class="gradient-text">{{ 'about.headingAccent' | translate }}</span></h1>
+      <p>{{ 'about.bio1' | translate }}</p>
+      <p>{{ 'about.bio2' | translate }}</p>
       <div class="about-intro__meta">
         <div class="about-intro__meta-item">
-          <span class="about-intro__meta-label">Role</span>
-          <span>Frontend Developer</span>
+          <span class="about-intro__meta-label">{{ 'about.roleLabel' | translate }}</span>
+          <span>{{ 'about.roleValue' | translate }}</span>
         </div>
         <div class="about-intro__meta-item">
-          <span class="about-intro__meta-label">Location</span>
-          <span>Placeholder City, Country</span>
+          <span class="about-intro__meta-label">{{ 'about.locationLabel' | translate }}</span>
+          <span>{{ 'about.locationValue' | translate }}</span>
         </div>
         <div class="about-intro__meta-item">
-          <span class="about-intro__meta-label">Experience</span>
-          <span>X+ Years</span>
+          <span class="about-intro__meta-label">{{ 'about.experienceLabel' | translate }}</span>
+          <span>{{ 'about.experienceValue' | translate }}</span>
         </div>
       </div>
     </div>
@@ -36,8 +29,8 @@
 <!-- Skills -->
 <section class="section skills">
   <div class="section__header reveal-up">
-    <h2 class="section-heading">Skills</h2>
-    <p class="section-subheading">Technologies I work with on a daily basis.</p>
+    <h2 class="section-heading">{{ 'about.skillsHeading' | translate }}</h2>
+    <p class="section-subheading">{{ 'about.skillsSubheading' | translate }}</p>
   </div>
   <div class="skills__grid">
     @for (skill of skills; track skill) {

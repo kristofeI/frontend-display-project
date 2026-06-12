@@ -3,44 +3,43 @@
   <div class="hero__bg-dots"></div>
   <div class="hero__overlay"></div>
   <div class="hero__content reveal-up">
-    <h1 class="hero__title gradient-text">Crafting Digital<br>Experiences</h1>
+    <h1 class="hero__title gradient-text">{{ 'home.hero.title1' | translate }}<br>{{ 'home.hero.title2' | translate }}</h1>
     <p class="hero__subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua.
+      {{ 'home.hero.subtitle' | translate }}
     </p>
     <div class="hero__actions">
-      <a href="#features" class="btn btn--primary">Get started</a>
-      <a href="#features" class="btn btn--secondary">Learn more</a>
+      <a href="#features" class="btn btn--primary">{{ 'home.hero.cta' | translate }}</a>
+      <a href="#features" class="btn btn--secondary">{{ 'home.hero.learn' | translate }}</a>
     </div>
   </div>
   <div class="hero__image reveal-up">
-    <img src="https://picsum.photos/seed/dashboard/900/540" alt="Dashboard preview" />
+    <img src="https://picsum.photos/seed/dashboard/900/540" [attr.alt]="'home.hero.imageAlt' | translate" />
   </div>
 </section>
 
 <!-- Features -->
 <section class="section features" id="features">
   <div class="section__header reveal-up">
-    <h2 class="section-heading">What we offer</h2>
+    <h2 class="section-heading">{{ 'home.features.heading' | translate }}</h2>
     <p class="section-subheading">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      {{ 'home.features.subheading' | translate }}
     </p>
   </div>
   <div class="features__grid">
     <div class="card reveal-up">
       <div class="features__icon">&#9670;</div>
-      <h3>Feature One</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+      <h3>{{ 'home.features.one.title' | translate }}</h3>
+      <p>{{ 'home.features.one.desc' | translate }}</p>
     </div>
     <div class="card reveal-up">
       <div class="features__icon">&#9650;</div>
-      <h3>Feature Two</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+      <h3>{{ 'home.features.two.title' | translate }}</h3>
+      <p>{{ 'home.features.two.desc' | translate }}</p>
     </div>
     <div class="card reveal-up">
       <div class="features__icon">&#9679;</div>
-      <h3>Feature Three</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+      <h3>{{ 'home.features.three.title' | translate }}</h3>
+      <p>{{ 'home.features.three.desc' | translate }}</p>
     </div>
   </div>
 </section>
@@ -48,8 +47,8 @@
 <!-- CTA Banner -->
 <section class="cta section">
   <div class="cta__inner reveal-up">
-    <h2 class="section-heading">Ready to get started?</h2>
-    <p class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="/contact" class="btn btn--primary">Contact me</a>
+    <h2 class="section-heading">{{ 'home.cta.heading' | translate }}</h2>
+    <p class="section-subheading">{{ 'home.cta.subheading' | translate }}</p>
+    <a href="/contact" class="btn btn--primary">{{ 'home.cta.btn' | translate }}</a>
   </div>
 </section>

@@ -1,9 +1,9 @@
 <!-- Header -->
 <section class="contact-header section">
   <div class="section__header reveal-up">
-    <h1 class="section-heading">Get in <span class="gradient-text">Touch</span></h1>
+    <h1 class="section-heading">{{ 'contact.heading' | translate }} <span class="gradient-text">{{ 'contact.headingAccent' | translate }}</span></h1>
     <p class="section-subheading">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feel free to reach out.
+      {{ 'contact.subheading' | translate }}
     </p>
   </div>
 </section>
@@ -14,42 +14,42 @@
 
     <!-- Form -->
     <div class="card contact-form reveal-up">
-      <h2>Send a message</h2>
+      <h2>{{ 'contact.form.heading' | translate }}</h2>
       <form (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate>
         <div class="contact-form__field">
-          <label for="name">Name</label>
+          <label for="name">{{ 'contact.form.nameLabel' | translate }}</label>
           <input
             id="name"
             name="name"
             type="text"
             [(ngModel)]="form.name"
-            placeholder="Your name"
+            [placeholder]="'contact.form.namePlaceholder' | translate"
             required
           />
         </div>
         <div class="contact-form__field">
-          <label for="email">Email</label>
+          <label for="email">{{ 'contact.form.emailLabel' | translate }}</label>
           <input
             id="email"
             name="email"
             type="email"
             [(ngModel)]="form.email"
-            placeholder="your&#64;email.com"
+            [placeholder]="'contact.form.emailPlaceholder' | translate"
             required
           />
         </div>
         <div class="contact-form__field">
-          <label for="message">Message</label>
+          <label for="message">{{ 'contact.form.messageLabel' | translate }}</label>
           <textarea
             id="message"
             name="message"
             [(ngModel)]="form.message"
-            placeholder="Your message..."
+            [placeholder]="'contact.form.messagePlaceholder' | translate"
             rows="6"
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn btn--primary">Send message</button>
+        <button type="submit" class="btn btn--primary">{{ 'contact.form.submit' | translate }}</button>
       </form>
     </div>
 
@@ -57,17 +57,17 @@
     <div class="contact-info reveal-up">
       <div class="card contact-info__card">
         <div class="contact-info__icon">&#9993;</div>
-        <h3>Email</h3>
+        <h3>{{ 'contact.email.heading' | translate }}</h3>
         <p>hello&#64;placeholder.dev</p>
       </div>
       <div class="card contact-info__card">
         <div class="contact-info__icon">&#9742;</div>
-        <h3>Phone</h3>
+        <h3>{{ 'contact.phone.heading' | translate }}</h3>
         <p>+1 (000) 000-0000</p>
       </div>
       <div class="card contact-info__card">
         <div class="contact-info__icon">&#9679;</div>
-        <h3>Location</h3>
+        <h3>{{ 'contact.location.heading' | translate }}</h3>
         <p>Placeholder City, Country</p>
       </div>
     </div>

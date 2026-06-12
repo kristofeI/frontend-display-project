@@ -1,9 +1,10 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule],
+  imports: [FormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
@@ -30,7 +31,6 @@ export class Contact implements OnInit {
   }
 
   onSubmit(): void {
-    // placeholder — backend integration will be added later
     console.log('Form submitted', this.form);
   }
 }

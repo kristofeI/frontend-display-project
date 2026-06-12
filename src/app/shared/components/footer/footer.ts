@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '../../pipes/translate.pipe';
+import { TranslationService } from '../../../core/services/translation.service';
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
 export class Footer {
   readonly year = new Date().getFullYear();
+  protected readonly t = inject(TranslationService);
 }

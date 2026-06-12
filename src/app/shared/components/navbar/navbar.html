@@ -2,17 +2,17 @@
   <nav class="navbar__inner">
     <ul class="navbar__links" [class.navbar__links--open]="menuOpen()">
       <li>
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Home</a>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [queryParamsHandling]="'preserve'" (click)="closeMenu()">{{ 'nav.home' | translate }}</a>
       </li>
       <li>
-        <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About Me</a>
+        <a routerLink="/about" routerLinkActive="active" [queryParamsHandling]="'preserve'" (click)="closeMenu()">{{ 'nav.about' | translate }}</a>
       </li>
       <li>
-        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+        <a routerLink="/contact" routerLinkActive="active" [queryParamsHandling]="'preserve'" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a>
       </li>
     </ul>
 
-    <button class="navbar__burger" (click)="toggleMenu()" aria-label="Toggle menu">
+    <button class="navbar__burger" (click)="toggleMenu()" [attr.aria-label]="'nav.toggleMenu' | translate">
       @if (menuOpen()) {
         <span class="navbar__burger-icon">&#x2715;</span>
       } @else {

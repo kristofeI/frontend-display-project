@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
+  },
+  "footer": {
+    "tagline": "Building modern web experiences.",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact",
+    "copyright": "All rights reserved.",
+    "github": "GitHub",
+    "twitter": "Twitter / X",
+    "linkedin": "LinkedIn"
+  },
+  "home": {
+    "hero": {
+      "title1": "Crafting Digital",
+      "title2": "Experiences",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "cta": "Get started",
+      "learn": "Learn more",
+      "imageAlt": "Dashboard preview"
+    },
+    "features": {
+      "heading": "What we offer",
+      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "one": {
+        "title": "Feature One",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      },
+      "two": {
+        "title": "Feature Two",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      },
+      "three": {
+        "title": "Feature Three",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      }
+    },
+    "cta": {
+      "heading": "Ready to get started?",
+      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "btn": "Contact me"
+    }
+  },
+  "about": {
+    "heading": "About",
+    "headingAccent": "Me",
+    "bio1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "bio2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    "imageAlt": "Placeholder portrait",
+    "roleLabel": "Role",
+    "roleValue": "Frontend Developer",
+    "locationLabel": "Location",
+    "locationValue": "Placeholder City, Country",
+    "experienceLabel": "Experience",
+    "experienceValue": "X+ Years",
+    "skillsHeading": "Skills",
+    "skillsSubheading": "Technologies I work with on a daily basis."
+  },
+  "contact": {
+    "heading": "Get in",
+    "headingAccent": "Touch",
+    "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feel free to reach out.",
+    "form": {
+      "heading": "Send a message",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send message"
+    },
+    "email": {
+      "heading": "Email"
+    },
+    "phone": {
+      "heading": "Phone"
+    },
+    "location": {
+      "heading": "Location"
+    }
+  }
+}

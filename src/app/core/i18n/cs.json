@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Domů",
+    "about": "O mně",
+    "contact": "Kontakt",
+    "toggleMenu": "Přepnout menu"
+  },
+  "footer": {
+    "tagline": "Tvoříme moderní webové zážitky.",
+    "navHeading": "Navigace",
+    "contactHeading": "Kontakt",
+    "copyright": "Všechna práva vyhrazena.",
+    "github": "GitHub",
+    "twitter": "Twitter / X",
+    "linkedin": "LinkedIn"
+  },
+  "home": {
+    "hero": {
+      "title1": "Tvoříme digitální",
+      "title2": "zážitky",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "cta": "Začít",
+      "learn": "Zjistit více",
+      "imageAlt": "Náhled aplikace"
+    },
+    "features": {
+      "heading": "Co nabízíme",
+      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "one": {
+        "title": "Funkce jedna",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      },
+      "two": {
+        "title": "Funkce dvě",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      },
+      "three": {
+        "title": "Funkce tři",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+      }
+    },
+    "cta": {
+      "heading": "Připraveni začít?",
+      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "btn": "Kontaktujte mě"
+    }
+  },
+  "about": {
+    "heading": "O",
+    "headingAccent": "mně",
+    "bio1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "bio2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    "imageAlt": "Portrét",
+    "roleLabel": "Role",
+    "roleValue": "Frontend vývojář",
+    "locationLabel": "Místo",
+    "locationValue": "Placeholder City, Country",
+    "experienceLabel": "Zkušenosti",
+    "experienceValue": "X+ let",
+    "skillsHeading": "Dovednosti",
+    "skillsSubheading": "Technologie, se kterými pracuji každý den."
+  },
+  "contact": {
+    "heading": "Kontaktujte",
+    "headingAccent": "nás",
+    "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neváhejte nás kontaktovat.",
+    "form": {
+      "heading": "Napište zprávu",
+      "nameLabel": "Jméno",
+      "namePlaceholder": "Vaše jméno",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "vas@email.com",
+      "messageLabel": "Zpráva",
+      "messagePlaceholder": "Vaše zpráva...",
+      "submit": "Odeslat zprávu"
+    },
+    "email": {
+      "heading": "E-mail"
+    },
+    "phone": {
+      "heading": "Telefon"
+    },
+    "location": {
+      "heading": "Místo"
+    }
+  }
+}
