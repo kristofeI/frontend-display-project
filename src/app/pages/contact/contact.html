@@ -1,0 +1,76 @@
+<!-- Header -->
+<section class="contact-header section">
+  <div class="section__header reveal-up">
+    <h1 class="section-heading">Get in <span class="gradient-text">Touch</span></h1>
+    <p class="section-subheading">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feel free to reach out.
+    </p>
+  </div>
+</section>
+
+<!-- Content -->
+<section class="section contact-content">
+  <div class="contact-content__grid">
+
+    <!-- Form -->
+    <div class="card contact-form reveal-up">
+      <h2>Send a message</h2>
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate>
+        <div class="contact-form__field">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            [(ngModel)]="form.name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="contact-form__field">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            [(ngModel)]="form.email"
+            placeholder="your&#64;email.com"
+            required
+          />
+        </div>
+        <div class="contact-form__field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            [(ngModel)]="form.message"
+            placeholder="Your message..."
+            rows="6"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send message</button>
+      </form>
+    </div>
+
+    <!-- Info -->
+    <div class="contact-info reveal-up">
+      <div class="card contact-info__card">
+        <div class="contact-info__icon">&#9993;</div>
+        <h3>Email</h3>
+        <p>hello&#64;placeholder.dev</p>
+      </div>
+      <div class="card contact-info__card">
+        <div class="contact-info__icon">&#9742;</div>
+        <h3>Phone</h3>
+        <p>+1 (000) 000-0000</p>
+      </div>
+      <div class="card contact-info__card">
+        <div class="contact-info__icon">&#9679;</div>
+        <h3>Location</h3>
+        <p>Placeholder City, Country</p>
+      </div>
+    </div>
+
+  </div>
+</section>

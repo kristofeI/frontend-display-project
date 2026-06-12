@@ -1,0 +1,49 @@
+<!-- Intro -->
+<section class="section about-intro">
+  <div class="about-intro__grid reveal-up">
+    <div class="about-intro__image">
+      <img src="https://picsum.photos/seed/portrait/480/560" alt="Placeholder portrait" />
+    </div>
+    <div class="about-intro__content">
+      <h1 class="section-heading">About <span class="gradient-text">Me</span></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+      <div class="about-intro__meta">
+        <div class="about-intro__meta-item">
+          <span class="about-intro__meta-label">Role</span>
+          <span>Frontend Developer</span>
+        </div>
+        <div class="about-intro__meta-item">
+          <span class="about-intro__meta-label">Location</span>
+          <span>Placeholder City, Country</span>
+        </div>
+        <div class="about-intro__meta-item">
+          <span class="about-intro__meta-label">Experience</span>
+          <span>X+ Years</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section skills">
+  <div class="section__header reveal-up">
+    <h2 class="section-heading">Skills</h2>
+    <p class="section-subheading">Technologies I work with on a daily basis.</p>
+  </div>
+  <div class="skills__grid">
+    @for (skill of skills; track skill) {
+      <div class="card skills__card reveal-up">
+        <span>{{ skill }}</span>
+      </div>
+    }
+  </div>
+</section>

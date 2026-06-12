@@ -1,0 +1,33 @@
+// Colors
+$color-bg: #181b20;
+$color-surface: #1d2127;
+$color-border: #333a44;
+$color-primary: #c490ff;
+$color-secondary: #6c72e8;
+$color-text: #ffffff;
+$color-text-muted: #9ca3af;
+$color-btn: #4f55c1;
+
+// Gradients
+$gradient-text: linear-gradient(93deg, #e95cff 12%, #d27dff 49%, #9f79ff 93%);
+$gradient-hero-overlay: linear-gradient(180deg, rgba(24, 27, 32, 0.9) 30%, rgba(0, 0, 0, 0.26) 65%);
+$gradient-header: linear-gradient(83deg, #ceaed474 15%, #abd4e693 33%, #73edc097 79%, #8c91e86b 100%);
+
+// Typography
+$font-family: 'Roboto', system-ui, sans-serif;
+$font-size-hero: 3.75rem;
+$font-size-section: 2.25rem;
+$font-size-sub: 1.5rem;
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+
+// Spacing
+$section-padding-desktop: 80px 5%;
+$section-padding-mobile: 60px 4%;
+
+// Borders / Radius
+$radius-btn: 24px;
+$radius-card: 12px;
+
+// Transitions
+$transition-base: all 0.3s ease;

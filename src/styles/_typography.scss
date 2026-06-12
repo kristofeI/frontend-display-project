@@ -1,0 +1,57 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $font-size-hero;
+
+  @include mobile {
+    font-size: 2.25rem;
+  }
+}
+
+h2 {
+  font-size: $font-size-section;
+
+  @include mobile {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: $font-size-sub;
+}
+
+p {
+  color: $color-text-muted;
+  line-height: 1.7;
+}
+
+.gradient-text {
+  @include gradient-text;
+}
+
+.section-heading {
+  font-size: $font-size-section;
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+  @include mobile {
+    font-size: 1.5rem;
+  }
+}
+
+.section-subheading {
+  color: $color-text-muted;
+  font-size: 1.125rem;
+  max-width: 600px;
+}

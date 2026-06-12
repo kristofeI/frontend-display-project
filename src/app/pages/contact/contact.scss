@@ -1,0 +1,96 @@
+@use 'sass:color';
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.contact-header {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+
+.contact-content {
+  padding-top: 2rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.contact-form {
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: $color-text-muted;
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      border: 1px solid $color-border;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      color: $color-text;
+      font-size: 0.95rem;
+      transition: $transition-base;
+      resize: vertical;
+
+      &::placeholder {
+        color: color.adjust($color-text-muted, $lightness: -20%);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $color-secondary;
+      }
+    }
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    color: $color-primary;
+    margin-bottom: 0.25rem;
+  }
+}

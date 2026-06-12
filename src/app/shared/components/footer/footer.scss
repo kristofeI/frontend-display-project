@@ -1,0 +1,85 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.footer {
+  background: $color-surface;
+  border-top: 1px solid $color-border;
+  padding: 60px 5% 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__tagline {
+    color: $color-text-muted;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__social-link {
+    color: $color-text-muted;
+    transition: $transition-base;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__heading {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-text-muted;
+    margin-bottom: 1rem;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    a {
+      color: $color-text-muted;
+      font-size: 0.9rem;
+      transition: $transition-base;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: $color-text-muted;
+    font-size: 0.9rem;
+  }
+
+  &__bottom {
+    border-top: 1px solid $color-border;
+    padding: 1.5rem 0;
+    text-align: center;
+
+    p {
+      font-size: 0.85rem;
+      color: $color-text-muted;
+    }
+  }
+}

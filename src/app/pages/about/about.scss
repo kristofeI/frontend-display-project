@@ -1,0 +1,88 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.about-intro {
+  padding-top: 120px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 4rem;
+    align-items: center;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+
+  &__image {
+    border-radius: $radius-card;
+    overflow: hidden;
+    box-shadow: 0 15px 40px -8px rgba($color-primary, 0.25);
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $color-border;
+  }
+
+  &__meta-item {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: $color-text-muted;
+  }
+
+  &__meta-label {
+    font-weight: 600;
+    color: $color-text;
+    min-width: 100px;
+  }
+}
+
+.skills {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    @include flex-center;
+    min-height: 80px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: $color-text;
+    transition: $transition-base;
+
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+  }
+}
