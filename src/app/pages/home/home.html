@@ -18,37 +18,95 @@
 </section>
 
 <!-- Features -->
-<section class="section features" id="features">
-  <div class="section__header reveal-up">
-    <h2 class="section-heading">{{ 'home.features.heading' | translate }}</h2>
-    <p class="section-subheading">
-      {{ 'home.features.subheading' | translate }}
-    </p>
-  </div>
-  <div class="features__grid">
-    <div class="card reveal-up">
-      <div class="features__icon">&#9670;</div>
-      <h3>{{ 'home.features.one.title' | translate }}</h3>
-      <p>{{ 'home.features.one.desc' | translate }}</p>
+@defer (on viewport) {
+  <section class="section features" id="features">
+    <div class="section__header reveal-up">
+      <h2 class="section-heading">{{ 'home.features.heading' | translate }}</h2>
+      <p class="section-subheading">
+        {{ 'home.features.subheading' | translate }}
+      </p>
     </div>
-    <div class="card reveal-up">
-      <div class="features__icon">&#9650;</div>
-      <h3>{{ 'home.features.two.title' | translate }}</h3>
-      <p>{{ 'home.features.two.desc' | translate }}</p>
+    <div class="features__grid">
+      <div class="card reveal-up">
+        <div class="features__icon">&#9670;</div>
+        <h3>{{ 'home.features.one.title' | translate }}</h3>
+        <p>{{ 'home.features.one.desc' | translate }}</p>
+      </div>
+      <div class="card reveal-up">
+        <div class="features__icon">&#9650;</div>
+        <h3>{{ 'home.features.two.title' | translate }}</h3>
+        <p>{{ 'home.features.two.desc' | translate }}</p>
+      </div>
+      <div class="card reveal-up">
+        <div class="features__icon">&#9679;</div>
+        <h3>{{ 'home.features.three.title' | translate }}</h3>
+        <p>{{ 'home.features.three.desc' | translate }}</p>
+      </div>
     </div>
-    <div class="card reveal-up">
-      <div class="features__icon">&#9679;</div>
-      <h3>{{ 'home.features.three.title' | translate }}</h3>
-      <p>{{ 'home.features.three.desc' | translate }}</p>
+  </section>
+} @placeholder {
+  <div class="section features features--placeholder"></div>
+}
+
+<!-- Bundle Size -->
+@defer (on viewport) {
+  <section class="section bundle-size" id="bundle-size">
+    <div class="section__header reveal-up">
+      <h2 class="section-heading">{{ 'home.bundleSize.heading' | translate }}</h2>
+      <p class="section-subheading">{{ 'home.bundleSize.subheading' | translate }}</p>
     </div>
-  </div>
-</section>
+    <div class="bundle-size__steps">
+      <div class="card bundle-size__card reveal-up">
+        <span class="bundle-size__step">01</span>
+        <h3>{{ 'home.bundleSize.steps.one.title' | translate }}</h3>
+        <p>{{ 'home.bundleSize.steps.one.desc' | translate }}</p>
+        <span class="bundle-size__badge">{{ 'home.bundleSize.badge' | translate }}</span>
+      </div>
+      <div class="card bundle-size__card reveal-up">
+        <span class="bundle-size__step">02</span>
+        <h3>{{ 'home.bundleSize.steps.two.title' | translate }}</h3>
+        <p>{{ 'home.bundleSize.steps.two.desc' | translate }}</p>
+        <span class="bundle-size__badge">{{ 'home.bundleSize.badge' | translate }}</span>
+      </div>
+      <div class="card bundle-size__card reveal-up">
+        <span class="bundle-size__step">03</span>
+        <h3>{{ 'home.bundleSize.steps.three.title' | translate }}</h3>
+        <p>{{ 'home.bundleSize.steps.three.desc' | translate }}</p>
+        <span class="bundle-size__badge">{{ 'home.bundleSize.badge' | translate }}</span>
+      </div>
+      <div class="card bundle-size__card reveal-up">
+        <span class="bundle-size__step">04</span>
+        <h3>{{ 'home.bundleSize.steps.four.title' | translate }}</h3>
+        <p>{{ 'home.bundleSize.steps.four.desc' | translate }}</p>
+        <span class="bundle-size__badge">{{ 'home.bundleSize.badge' | translate }}</span>
+      </div>
+      <div class="card bundle-size__card reveal-up">
+        <span class="bundle-size__step">05</span>
+        <h3>{{ 'home.bundleSize.steps.five.title' | translate }}</h3>
+        <p>{{ 'home.bundleSize.steps.five.desc' | translate }}</p>
+        <span class="bundle-size__badge">{{ 'home.bundleSize.badge' | translate }}</span>
+      </div>
+      <div class="card bundle-size__card reveal-up">
+        <span class="bundle-size__step">06</span>
+        <h3>{{ 'home.bundleSize.steps.six.title' | translate }}</h3>
+        <p>{{ 'home.bundleSize.steps.six.desc' | translate }}</p>
+        <span class="bundle-size__badge">{{ 'home.bundleSize.badge' | translate }}</span>
+      </div>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section bundle-size--placeholder"></div>
+}
 
 <!-- CTA Banner -->
-<section class="cta section">
-  <div class="cta__inner reveal-up">
-    <h2 class="section-heading">{{ 'home.cta.heading' | translate }}</h2>
-    <p class="section-subheading">{{ 'home.cta.subheading' | translate }}</p>
-    <a href="/contact" class="btn btn--primary">{{ 'home.cta.btn' | translate }}</a>
-  </div>
-</section>
+@defer (on viewport) {
+  <section class="cta section">
+    <div class="cta__inner reveal-up">
+      <h2 class="section-heading">{{ 'home.cta.heading' | translate }}</h2>
+      <p class="section-subheading">{{ 'home.cta.subheading' | translate }}</p>
+      <a href="/contact" class="btn btn--primary">{{ 'home.cta.btn' | translate }}</a>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section cta--placeholder"></div>
+}

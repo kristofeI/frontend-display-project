@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ElementRef } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
@@ -7,6 +7,7 @@ import { TranslatePipe } from '../../shared/pipes/translate.pipe';
   imports: [NgOptimizedImage, TranslatePipe],
   templateUrl: './home.html',
   styleUrl: './home.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home implements OnInit {
   constructor(private el: ElementRef) {}

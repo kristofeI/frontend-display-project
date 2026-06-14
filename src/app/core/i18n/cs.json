@@ -16,33 +16,46 @@
   },
   "home": {
     "hero": {
-      "title1": "Tvoříme digitální",
-      "title2": "zážitky",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "cta": "Začít",
+      "title1": "Vítejte na mém",
+      "title2": "Angular showcasu",
+      "subtitle": "Jsem Krzysztof Kobus — frontend vývojář s 5 lety zkušeností. Tady vám ukážu, jak z frameworku Angular vytěžit to nejlepší.",
+      "cta": "Prozkoumat mou práci",
       "learn": "Zjistit více",
       "imageAlt": "Náhled aplikace"
     },
     "features": {
-      "heading": "Co nabízíme",
-      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "heading": "Co přináším",
+      "subheading": "Pět let Angularu. Žádné zkratky.",
       "one": {
-        "title": "Funkce jedna",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+        "title": "Zvládnutí Angularu",
+        "desc": "Od standalone komponent a signálů po lazy loading a pokročilé RxJS — Angular znám zevnitř a sleduji každou novou verzi."
       },
       "two": {
-        "title": "Funkce dvě",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+        "title": "Moderní UI architektura",
+        "desc": "Čistá, škálovatelná a výkonná rozhraní postavená na moderních vzorech, responzivním designu a pozornosti k detailům."
       },
       "three": {
-        "title": "Funkce tři",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+        "title": "5 let. Bez zkratek.",
+        "desc": "Půl dekády budování reálných aplikací, řešení složitých problémů a nikdy se nespokojit s dostatečně dobrým."
       }
     },
     "cta": {
-      "heading": "Připraveni začít?",
-      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "heading": "Viděli jste dost? Pojďme si promluvit.",
+      "subheading": "Ať hledáte někoho ke spolupráci nebo jen chcete být v kontaktu — jsem připraven.",
       "btn": "Kontaktujte mě"
+    },
+    "bundleSize": {
+      "heading": "Velikost bundlu. Optimalizováno.",
+      "subheading": "Šest technik použitých přímo v této aplikaci — ne jen popsaných.",
+      "badge": "Použito zde",
+      "steps": {
+        "one":   { "title": "Lazy-loading routeru",   "desc": "Každá stránka se načte až při navigaci. Žádný zbytečný JavaScript předem." },
+        "two":   { "title": "Standalone API",          "desc": "Žádné NgModuly. Komponenty deklarují vlastní importy — bundler odstraní vše nepotřebné." },
+        "three": { "title": "Pouze CSS animace",       "desc": "Žádný balíček @angular/animations. Nativní keyframes a IntersectionObserver — stejný efekt, nulová cena." },
+        "four":  { "title": "Čisté funkce",            "desc": "Bezstavové utility jako samostatné funkce, ne metody tříd. Bundler odstraní to, co se nepoužívá." },
+        "five":  { "title": "Deferrable views",        "desc": "Sekce pod úvodním záběrem se načítají při scrollu, ne při startu. Počáteční stránka platí jen za to, co vidí uživatel." },
+        "six":   { "title": "Zoneless",                "desc": "Žádný zone.js. Change detection běží jen na signálech — rychlejší, menší a přehlednější." }
+      }
     }
   },
   "about": {

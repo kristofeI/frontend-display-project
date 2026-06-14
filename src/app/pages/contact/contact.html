@@ -54,23 +54,27 @@
     </div>
 
     <!-- Info -->
-    <div class="contact-info reveal-up">
-      <div class="card contact-info__card">
-        <div class="contact-info__icon">&#9993;</div>
-        <h3>{{ 'contact.email.heading' | translate }}</h3>
-        <p>hello&#64;placeholder.dev</p>
+    @defer (on viewport) {
+      <div class="contact-info reveal-up">
+        <div class="card contact-info__card">
+          <div class="contact-info__icon">&#9993;</div>
+          <h3>{{ 'contact.email.heading' | translate }}</h3>
+          <p>hello&#64;placeholder.dev</p>
+        </div>
+        <div class="card contact-info__card">
+          <div class="contact-info__icon">&#9742;</div>
+          <h3>{{ 'contact.phone.heading' | translate }}</h3>
+          <p>+1 (000) 000-0000</p>
+        </div>
+        <div class="card contact-info__card">
+          <div class="contact-info__icon">&#9679;</div>
+          <h3>{{ 'contact.location.heading' | translate }}</h3>
+          <p>Placeholder City, Country</p>
+        </div>
       </div>
-      <div class="card contact-info__card">
-        <div class="contact-info__icon">&#9742;</div>
-        <h3>{{ 'contact.phone.heading' | translate }}</h3>
-        <p>+1 (000) 000-0000</p>
-      </div>
-      <div class="card contact-info__card">
-        <div class="contact-info__icon">&#9679;</div>
-        <h3>{{ 'contact.location.heading' | translate }}</h3>
-        <p>Placeholder City, Country</p>
-      </div>
-    </div>
+    } @placeholder {
+      <div class="contact-info--placeholder"></div>
+    }
 
   </div>
 </section>

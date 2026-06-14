@@ -27,16 +27,20 @@
 </section>
 
 <!-- Skills -->
-<section class="section skills">
-  <div class="section__header reveal-up">
-    <h2 class="section-heading">{{ 'about.skillsHeading' | translate }}</h2>
-    <p class="section-subheading">{{ 'about.skillsSubheading' | translate }}</p>
-  </div>
-  <div class="skills__grid">
-    @for (skill of skills; track skill) {
-      <div class="card skills__card reveal-up">
-        <span>{{ skill }}</span>
-      </div>
-    }
-  </div>
-</section>
+@defer (on viewport) {
+  <section class="section skills">
+    <div class="section__header reveal-up">
+      <h2 class="section-heading">{{ 'about.skillsHeading' | translate }}</h2>
+      <p class="section-subheading">{{ 'about.skillsSubheading' | translate }}</p>
+    </div>
+    <div class="skills__grid">
+      @for (skill of skills; track skill) {
+        <div class="card skills__card reveal-up">
+          <span>{{ skill }}</span>
+        </div>
+      }
+    </div>
+  </section>
+} @placeholder {
+  <div class="section skills--placeholder"></div>
+}

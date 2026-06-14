@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
@@ -7,6 +7,7 @@ import { TranslatePipe } from '../../shared/pipes/translate.pipe';
   imports: [FormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Contact implements OnInit {
   form = { name: '', email: '', message: '' };

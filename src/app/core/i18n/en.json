@@ -16,33 +16,46 @@
   },
   "home": {
     "hero": {
-      "title1": "Crafting Digital",
-      "title2": "Experiences",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "cta": "Get started",
+      "title1": "Welcome to My",
+      "title2": "Angular Showcase",
+      "subtitle": "I'm Krzysztof Kobus — a frontend developer with 5 years of experience. Here I'll show you how I can bring the best out of the Angular framework.",
+      "cta": "Explore my work",
       "learn": "Learn more",
       "imageAlt": "Dashboard preview"
     },
     "features": {
-      "heading": "What we offer",
-      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "heading": "What I bring to the table",
+      "subheading": "Five years of Angular. Zero shortcuts.",
       "one": {
-        "title": "Feature One",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+        "title": "Angular Mastery",
+        "desc": "From standalone components and signals to lazy loading and advanced RxJS — I know Angular inside out and stay current with every release."
       },
       "two": {
-        "title": "Feature Two",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+        "title": "Modern UI Architecture",
+        "desc": "Clean, scalable, and performant interfaces built with cutting-edge patterns, responsive design, and attention to every detail."
       },
       "three": {
-        "title": "Feature Three",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."
+        "title": "5 Years. No Shortcuts.",
+        "desc": "Half a decade of building real-world applications, solving complex problems, and never settling for good enough."
       }
     },
     "cta": {
-      "heading": "Ready to get started?",
-      "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "heading": "Seen enough? Let's talk.",
+      "subheading": "Whether you're looking to hire or just want to connect — I'm ready.",
       "btn": "Contact me"
+    },
+    "bundleSize": {
+      "heading": "Bundle Size. Optimized.",
+      "subheading": "Six techniques applied in this app — not just talked about.",
+      "badge": "Applied here",
+      "steps": {
+        "one":   { "title": "Router Lazy-Loading",  "desc": "Every page loads only when navigated to. Zero upfront JavaScript for routes you haven't visited." },
+        "two":   { "title": "Standalone API",        "desc": "No NgModules. Components declare their own imports, making unused code invisible to the bundler." },
+        "three": { "title": "CSS Animations Only",   "desc": "No @angular/animations package. Native keyframes and IntersectionObserver — same effect, zero cost." },
+        "four":  { "title": "Pure Functions",        "desc": "Stateless utilities live as plain functions, not class methods. The bundler tree-shakes what isn't used." },
+        "five":  { "title": "Deferrable Views",      "desc": "Below-fold sections load on scroll, not on boot. The initial page only pays for what the user sees first." },
+        "six":   { "title": "Zoneless",              "desc": "No zone.js. Change detection runs on signals only — faster, smaller, and easier to reason about." }
+      }
     }
   },
   "about": {
