@@ -18,35 +18,31 @@
 </section>
 
 <!-- Features -->
-@defer (on viewport) {
-  <section class="section features" id="features">
-    <div class="section__header reveal-up">
-      <h2 class="section-heading">{{ 'home.features.heading' | translate }}</h2>
-      <p class="section-subheading">
-        {{ 'home.features.subheading' | translate }}
-      </p>
+<section class="section features" id="features">
+  <div class="section__header reveal-up">
+    <h2 class="section-heading">{{ 'home.features.heading' | translate }}</h2>
+    <p class="section-subheading">
+      {{ 'home.features.subheading' | translate }}
+    </p>
+  </div>
+  <div class="features__grid">
+    <div class="card reveal-up">
+      <div class="features__icon">&#9670;</div>
+      <h3>{{ 'home.features.one.title' | translate }}</h3>
+      <p>{{ 'home.features.one.desc' | translate }}</p>
     </div>
-    <div class="features__grid">
-      <div class="card reveal-up">
-        <div class="features__icon">&#9670;</div>
-        <h3>{{ 'home.features.one.title' | translate }}</h3>
-        <p>{{ 'home.features.one.desc' | translate }}</p>
-      </div>
-      <div class="card reveal-up">
-        <div class="features__icon">&#9650;</div>
-        <h3>{{ 'home.features.two.title' | translate }}</h3>
-        <p>{{ 'home.features.two.desc' | translate }}</p>
-      </div>
-      <div class="card reveal-up">
-        <div class="features__icon">&#9679;</div>
-        <h3>{{ 'home.features.three.title' | translate }}</h3>
-        <p>{{ 'home.features.three.desc' | translate }}</p>
-      </div>
+    <div class="card reveal-up">
+      <div class="features__icon">&#9650;</div>
+      <h3>{{ 'home.features.two.title' | translate }}</h3>
+      <p>{{ 'home.features.two.desc' | translate }}</p>
     </div>
-  </section>
-} @placeholder {
-  <div class="section features features--placeholder"></div>
-}
+    <div class="card reveal-up">
+      <div class="features__icon">&#9679;</div>
+      <h3>{{ 'home.features.three.title' | translate }}</h3>
+      <p>{{ 'home.features.three.desc' | translate }}</p>
+    </div>
+  </div>
+</section>
 
 <!-- Bundle Size -->
 @defer (on viewport) {

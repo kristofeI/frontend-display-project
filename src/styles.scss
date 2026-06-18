@@ -70,11 +70,5 @@
 }
 
 .reveal-up {
-  opacity: 0;
   animation: reveal-up 0.8s ease forwards;
-  animation-play-state: paused;
-
-  &.visible {
-    animation-play-state: running;
-  }
 }
